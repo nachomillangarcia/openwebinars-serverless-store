@@ -20,12 +20,12 @@ sls dynamodb migrate
 
 API is now available in http://localhost:3000
 
-Open `./client/local/index.html` to open the client
+Open `./client/local/index.html` to get the client in your browser.
 
 
 ## Deploy to AWS
 
-First, configure `serverles.yaml` to use your preferred region and change the service name to not collide when creating S3 buckets for the client.
+First, configure `serverless.yaml` to use your preferred region and change the service name to not collide when creating S3 buckets for the client.
 
 Then, deploy serverless services:
 
