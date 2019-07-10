@@ -8,7 +8,7 @@
     <h3 class="text-center m-2"> Create item </h1>
     <br>
   <div class="container">
-    <form onsubmit='return onSubmit(this)'>
+    <form onsubmit='onSubmit(this); return false'>
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" id="name" placeholder="Item's name">
@@ -26,7 +26,7 @@
   </div>
   <script>
     function onSubmit( form ){
-      var url = baseUrl+"/items"
+      var url = baseUrl+"items/"
       var params = {
         "name": form.name.value,
         "description": form.desc.value,

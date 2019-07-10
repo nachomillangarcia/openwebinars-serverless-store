@@ -15,12 +15,17 @@ Currently the client only contains views to create a new item (`create.html`), a
 npm install
 sls dynamodb install
 sls offline start
+```
+
+In another terminal run this to bootstrap dynamodb tables:
+
+```
 sls dynamodb migrate
 ```
 
 API is now available in http://localhost:3000
 
-Open `./client/local/index.html` to get the client in your browser.
+Open `./client/local/index.html` or `./client/local/create.html` to get the client in your browser.
 
 
 ## Deploy to AWS
